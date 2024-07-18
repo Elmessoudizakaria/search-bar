@@ -1,0 +1,34 @@
+:host {
+  display: block;
+}
+
+.category-menu {
+  max-width: 250px;
+  box-sizing: border-box;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    padding: 5px;
+    li {
+      display: flex;
+      gap: 15px;
+      padding-bottom: 5px;
+      max-height: 100px;
+      box-sizing: border-box;
+      border-bottom: 1px solid blueviolet;
+      img {
+        width: 20%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .title {
+        align-self: center;
+      }
+    }
+  }
+  .category {
+    padding: 5px 15px;
+  }
+}

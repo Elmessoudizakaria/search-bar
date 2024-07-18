@@ -1,9 +1,12 @@
 .search-input {
-  width: 60%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  width: 90%;
   input {
     padding: 5px;
     border: 1px solid blueviolet;
     border-radius: 5px;
-    width: 100%;
+    width: 65%;
+    box-sizing: border-box;
   }
 }

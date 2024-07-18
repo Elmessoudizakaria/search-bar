@@ -33,6 +33,8 @@ module.exports = {
       filename: "remoteEntry.js",
       exposes: {
         "./SearchComponent": "./src/app/containers/search/search.component.ts",
+        "./SearchCategoriesMenuComponent":
+          "./src/app/containers/search-categories-menu/search-categories-menu.component.ts",
       },
 
       // For hosts (please adjust)

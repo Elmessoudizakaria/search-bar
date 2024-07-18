@@ -1,0 +1,14 @@
+<div
+  *ngIf="categories$ | async as categories"
+  class="category-menu"
+  (mouseenter)="displayCategories(true)"
+  (mouseleave)="displayCategories(false)"
+>
+  <ul *ngIf="showCategorie">
+    <li *ngFor="let item of categories" (click)="selecteCategorie(item)">
+      <img [src]="item.image" alt="" />
+      <label for="" class="title">{{ item.name }}</label>
+    </li>
+  </ul>
+  <div *ngIf="!showCategorie" class="category">{{ selectedCategoryName }}</div>
+</div>
