@@ -14,14 +14,14 @@ export class SearchCategoriesMenuComponent {
   categories$ = this.categoryService.loadCategories();
   showCategorie = false;
   selectedCategorieChannel = new BroadcastChannel('selected-categorie');
-  selectedCategoryName = 'Electronics';
+  selectedCategoryName = 'beauty';
   constructor(private categoryService: CategoryService) {}
 
   displayCategories(value: boolean) {
     this.showCategorie = value;
   }
-  selecteCategorie(category: Category) {
-    this.selectedCategoryName = category.name;
-    this.selectedCategorieChannel.postMessage(category.id);
+  selecteCategorie(category: string) {
+    this.selectedCategoryName = category;
+    this.selectedCategorieChannel.postMessage(category);
   }
 }

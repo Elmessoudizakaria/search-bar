@@ -11,10 +11,9 @@ import { FormsModule } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchComponent {
-  search = '';
-  searchChannel = new BroadcastChannel('search-channel');
-  
+  searchValue = '';
+  channel = new BroadcastChannel('search-channel');
   submitSearch() {
-    this.searchChannel.postMessage(this.search);
+    this.channel.postMessage(this.searchValue);
   }
 }

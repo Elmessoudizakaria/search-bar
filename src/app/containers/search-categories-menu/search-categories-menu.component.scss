@@ -3,21 +3,28 @@
 }
 
 .category-menu {
-  max-width: 250px;
+  // max-width: 250px;
   box-sizing: border-box;
   ul {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    justify-content: space-between;
     list-style: none;
     padding: 5px;
+    width: 100%;
+    flex-wrap: wrap;
     li {
+      width: 30%;
       display: flex;
       gap: 15px;
       padding-bottom: 5px;
       max-height: 100px;
+      padding: 8px 5px;
       box-sizing: border-box;
-      border-bottom: 1px solid blueviolet;
+      cursor: pointer;
+      text-transform: capitalize;
+      &:hover {
+        text-decoration: underline;
+      }
       img {
         width: 20%;
         height: 100%;
